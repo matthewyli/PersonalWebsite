@@ -8,8 +8,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #2c041c;
-    color: hsl(46, 98%, 48%);
+    background: #d1e8e2;
+    color: #116466;
 }
 #header{
     width: 100%;
@@ -20,8 +20,23 @@ body{
 }
 .container{
     padding: 10px 10%;
+    width: 100%;
+    height: 100vh;
 }
-
+.largecontainer{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y proximity;
+}
+/* slides */
+.slides{
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+/* start */
 nav{
     display: flex;
     align-items: center;
@@ -40,7 +55,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #f5bd02;
+    color: #116466;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -50,7 +65,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #f5bd02;
+    background: #FFCB9A;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -68,13 +83,14 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #2c041c;
-    text-shadow: -1px -1px 0 #f5bd02, 1px -1px 0 #f5bd02, -1px 1px 0 #f5bd02, 1px 1px 0 #f5bd02;
+    color: #d1e8e2;
+    text-shadow: -1px -1px 0 #116466, 1px -1px 0 #116466, -1px 1px 0 #116466, 1px 1px 0 #116466;
 }
+
 /* about me */
-#about{
+/*#about{
     padding: 80px 0;
-    color: #f5bd02;
+    color: #116466;
 }
 .row{
     display: flex;
@@ -87,6 +103,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    opacity: 0.8;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -94,7 +111,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #f5bd02;
+    color: #116466;
 }
 .tab-titles{
     display: flex;
@@ -111,7 +128,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #f5bd02;
+    background: #116466;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -129,7 +146,7 @@ nav ul li a:hover::after{
 }
 
 .tab-contents ul li span{
-    color: #FFFFFF;
+    color: #2c3531;
     font-size: 14px;
 }
 .tab-contents{
@@ -140,7 +157,135 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+ */ 
 
+ .education {
+    float:left;
+    position:relative;
+    font-weight:300;
+    min-height:100%;
+    min-height:100vh;
+    h3.experience-title {
+      text-align:left;
+      text-transform:uppercase;
+      font-size:1.2em;
+      margin-bottom:20px;
+      font-weight:400;
+    }
+    .company-wrapper {
+      width:30%;
+      float:left;
+      text-align:left;
+      padding-right:5%;
+      margin-bottom:60px;
+    }
+    .job-wrapper {
+      width:70%;
+      float:left;
+      text-align:left;
+      padding-right:5%;
+      margin-bottom:60px;
+    }
+    .experience-title {
+        color:#2c3531;
+        margin-bottom:15px;;
+      }
+  }
+  
+  .section-padding {
+   padding:60px 60px 40px 40px;
+  }
+
+  .experience {
+    float:left;
+    position:relative;
+    font-weight:300;
+    min-height:100%;
+    min-height:100vh;
+    h3.experience-title {
+      text-align:left;
+      text-transform:uppercase;
+      font-size:1.2em;
+      margin-bottom:20px;
+      font-weight:400;
+    }
+    .company-wrapper {
+      width:30%;
+      float:left;
+      text-align:left;
+      padding-right:5%;
+      margin-bottom:60px;
+    }
+    .job-wrapper {
+      width:70%;
+      float:left;
+      text-align:left;
+      padding-right:5%;
+      margin-bottom:60px;
+    }
+    .experience-title {
+        color:#2c3531;
+        margin-bottom:15px;;
+      }
+  }
+  
+  .section-padding {
+   padding:60px 60px 40px 40px;
+  }
+  
+  .section-wrapper {
+    width:50%;
+    float:left;
+    text-align:left;
+    font-weight:300;
+    margin-bottom:20px;
+    &:nth-child(3){ 
+      padding-right:8%;
+    }
+    h3.section-title {
+      text-align:left;
+      text-transform:uppercase;
+      font-size:1.2em;
+      margin-bottom:20px;
+      font-weight:400;
+    }
+    .skill-percentage {
+      margin-bottom:10px;
+      margin-right: 25px;
+      position:relative;
+      &::after {
+        content:"";
+        width:100%;
+        height:6px;
+        background: #116466;
+        display:block;
+        margin-top:3px;
+      }
+      &::before{
+        content:"";
+        height:6px;
+        background: #ffcb9a;
+        position:absolute;
+        margin-top:3px;
+        bottom:0;
+      }
+      &:nth-child(1)::before {width:80%;animation: skill_1 0.6s ease;}
+      &:nth-child(2)::before {width:90%; animation: skill_2 0.6s ease;} 
+      &:nth-child(3)::before {width:50%;animation: skill_3 0.6s ease;}
+      &:nth-child(4)::before {width:60%;animation: skill_4 0.6s ease;}
+      &:nth-child(5)::before {width:70%;animation: skill_5 0.6s ease;}
+      &:nth-child(6)::before {width:70%;animation: skill_6 0.6s ease;}
+      &:nth-child(7)::before {width:70%;animation: skill_6 0.6s ease;}
+    }
+    @keyframes skill_1 {from {width:0%;}to {width:80%;}}
+    @keyframes skill_2 {from {width:0%;}to {width:90%;}}
+    @keyframes skill_3 {from {width:0%;}to {width:50%;}}
+    @keyframes skill_4 {from {width:0%;}to {width:60%;}}
+    @keyframes skill_5 {from {width:0%;}to {width:70%;}}  
+    @keyframes skill_6 {from {width:0%;}to {width:70%;}}
+    @keyframes skill_7 {from {width:0%;}to {width:70%;}}
+    
+  }
 /* ----------------services-------------- */
 #services{
     padding: 30px 0;
@@ -154,7 +299,7 @@ nav ul li a:hover::after{
 
 }
 .services-list div{
-    background: #4D0F28;
+    background: #ffcb9a;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -173,13 +318,13 @@ nav ul li a:hover::after{
 }
 .services-list div a{
     text-decoration: none;
-    color: #fff;
+    color: #2c3531;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
 .services-list div:hover{
-    background: #710193;
+    background: #d9b08c;
     transform: translateY(-10px);
 
 }
@@ -207,7 +352,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(44,4,28,0.6), #710193);
+    background: linear-gradient(rgba(255,203, 153, 0.6), #d1e8e2);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -228,7 +373,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #710103;
+    color: #116466;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -248,15 +393,15 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff004f;
+    border: 1px solid #ffcb9a;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: #116466;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff004f;
+    background: #ffcb9a;
 }
 
 /*contact*/
@@ -273,7 +418,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: #ffcb9a;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -284,17 +429,17 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #116466;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: #ffcb9a;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff004f;
+    background: #ffcb9a;
 }
 .contact-right form{
     width: 100%;
@@ -303,10 +448,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
+    background: #ffcb9a;
     padding: 15px;
     margin: 15px 0;
-    color: #fff;
+    color: #116466;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -320,12 +465,12 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px;
-    background: #262626;
+    background: #ffcb9a;
     font-weight: 300;
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff004f;
+    color: #880808;
 }
 /* css for small screens */
 
@@ -349,7 +494,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #ff004f;
+        background: #ffcb9a;
         position: fixed;
         top: 0;
         right: -200px;
