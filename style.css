@@ -50,6 +50,7 @@ nav{
 
 nav ul li{
     display: inline-block;
+    text-align: right;
     list-style: none;
     margin: 10px 20px;
 }
@@ -79,6 +80,7 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 .header-text h1{
+    text-align: left;
     font-size: 60px;
     margin-top: 20px;
 }
@@ -159,42 +161,9 @@ nav ul li a:hover::after{
 }
  */ 
 
- .education {
-    float:left;
-    position:relative;
-    font-weight:300;
-    min-height:100%;
-    min-height:100vh;
-    h3.experience-title {
-      text-align:left;
-      text-transform:uppercase;
-      font-size:1.2em;
-      margin-bottom:20px;
-      font-weight:400;
-    }
-    .company-wrapper {
-      width:30%;
-      float:left;
-      text-align:left;
-      padding-right:5%;
-      margin-bottom:60px;
-    }
-    .job-wrapper {
-      width:70%;
-      float:left;
-      text-align:left;
-      padding-right:5%;
-      margin-bottom:60px;
-    }
-    .experience-title {
-        color:#2c3531;
-        margin-bottom:15px;;
-      }
-  }
-  
-  .section-padding {
-   padding:60px 60px 40px 40px;
-  }
+ .highlight{
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFD0AE 50%);
+}
 
   .experience {
     float:left;
@@ -202,12 +171,22 @@ nav ul li a:hover::after{
     font-weight:300;
     min-height:100%;
     min-height:100vh;
+
+    .subsub-text{
+        font-size: 10px;
+        margin-bottom: 50px;
+    }
     h3.experience-title {
       text-align:left;
       text-transform:uppercase;
       font-size:1.2em;
       margin-bottom:20px;
       font-weight:400;
+      color: #2c3531;
+    }
+    .blank-link, .blank-link:visited{
+        text-decoration: none;
+        color: #2c3531;
     }
     .company-wrapper {
       width:30%;
@@ -227,10 +206,9 @@ nav ul li a:hover::after{
         color:#2c3531;
         margin-bottom:15px;;
       }
-  }
-  
-  .section-padding {
-   padding:60px 60px 40px 40px;
+    .section-padding {
+    padding:60px 60px 40px 40px;
+    }
   }
   
   .section-wrapper {
@@ -248,6 +226,7 @@ nav ul li a:hover::after{
       font-size:1.2em;
       margin-bottom:20px;
       font-weight:400;
+      color: #2c3531;
     }
     .skill-percentage {
       margin-bottom:10px;
@@ -269,27 +248,44 @@ nav ul li a:hover::after{
         margin-top:3px;
         bottom:0;
       }
-      &:nth-child(1)::before {width:80%;animation: skill_1 0.6s ease;}
-      &:nth-child(2)::before {width:90%; animation: skill_2 0.6s ease;} 
-      &:nth-child(3)::before {width:50%;animation: skill_3 0.6s ease;}
-      &:nth-child(4)::before {width:60%;animation: skill_4 0.6s ease;}
-      &:nth-child(5)::before {width:70%;animation: skill_5 0.6s ease;}
+      &:nth-child(1)::before {width:85%;animation: skill_1 0.6s ease;}
+      &:nth-child(2)::before {width:60%; animation: skill_2 0.6s ease;} 
+      &:nth-child(3)::before {width:40%;animation: skill_3 0.6s ease;}
+      &:nth-child(4)::before {width:50%;animation: skill_4 0.6s ease;}
+      &:nth-child(5)::before {width:80%;animation: skill_5 0.6s ease;}
       &:nth-child(6)::before {width:70%;animation: skill_6 0.6s ease;}
-      &:nth-child(7)::before {width:70%;animation: skill_6 0.6s ease;}
+      &:nth-child(7)::before {width:60%;animation: skill_6 0.6s ease;}
+      &:nth-child(8)::before {width:50%;animation: skill_3 0.6s ease;}
+      &:nth-child(9)::before {width:75%;animation: skill_4 0.6s ease;}
+      &:nth-child(10)::before {width:60%;animation: skill_5 0.6s ease;}
+      &:nth-child(11)::before {width:60%;animation: skill_6 0.6s ease;}
+      &:nth-child(12)::before {width:50%;animation: skill_6 0.6s ease;}
     }
-    @keyframes skill_1 {from {width:0%;}to {width:80%;}}
-    @keyframes skill_2 {from {width:0%;}to {width:90%;}}
-    @keyframes skill_3 {from {width:0%;}to {width:50%;}}
-    @keyframes skill_4 {from {width:0%;}to {width:60%;}}
-    @keyframes skill_5 {from {width:0%;}to {width:70%;}}  
+    @keyframes skill_1 {from {width:0%;}to {width:85%;}}
+    @keyframes skill_2 {from {width:0%;}to {width:60%;}}
+    @keyframes skill_3 {from {width:0%;}to {width:40%;}}
+    @keyframes skill_4 {from {width:0%;}to {width:50%;}}
+    @keyframes skill_5 {from {width:0%;}to {width:80%;}}  
     @keyframes skill_6 {from {width:0%;}to {width:70%;}}
-    @keyframes skill_7 {from {width:0%;}to {width:70%;}}
+    @keyframes skill_7 {from {width:0%;}to {width:60%;}}
+    @keyframes skill_8 {from {width:0%;}to {width:50%;}}
+    @keyframes skill_9 {from {width:0%;}to {width:75%;}}
+    @keyframes skill_10 {from {width:0%;}to {width:60%;}}  
+    @keyframes skill_11 {from {width:0%;}to {width:60%;}}
+    @keyframes skill_12 {from {width:0%;}to {width:50%;}}
     
   }
+/* spacer */
+#spacer{
+    height: 150vh;
+}
 /* ----------------services-------------- */
 #services{
     padding: 30px 0;
+}
 
+.sub-title-services{
+    left: none;
 }
 .services-list{
     display: grid;
@@ -311,6 +307,7 @@ nav ul li a:hover::after{
     margin-bottom: 30px;
 }
 
+
 .services-list div h2{
     font-size: 30px;
     font-weight: 500;
@@ -329,7 +326,7 @@ nav ul li a:hover::after{
 
 }
 /*---------portfolio-------*/
-#portfolio{
+/*#portfolio{
     padding: 50px 0;
 }
 .work-list{
@@ -389,6 +386,8 @@ nav ul li a:hover::after{
 .work:hover .layer{
     height: 100%;
 }
+
+*/
 .btn{
     display: block;
     margin: 50px auto;
