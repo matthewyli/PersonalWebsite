@@ -170,7 +170,7 @@ nav ul li a:hover::after{
     position:relative;
     font-weight:300;
     min-height:100%;
-    min-height:100vh;
+    min-height:250vh;
 
     .subsub-text{
         font-size: 10px;
@@ -184,7 +184,7 @@ nav ul li a:hover::after{
       font-weight:400;
       color: #2c3531;
     }
-    .blank-link, .blank-link:visited{
+    a.blank-link, a.blank-link:visited{
         text-decoration: none;
         color: #2c3531;
     }
@@ -275,13 +275,13 @@ nav ul li a:hover::after{
     @keyframes skill_12 {from {width:0%;}to {width:50%;}}
     
   }
-/* spacer */
-#spacer{
-    height: 150vh;
-}
 /* ----------------services-------------- */
-#services{
-    padding: 30px 0;
+.services{
+    float:left;
+    position:relative;
+    font-weight:300;
+    min-height:100%;
+    min-height:100vh;
 }
 
 .sub-title-services{
@@ -404,6 +404,13 @@ nav ul li a:hover::after{
 }
 
 /*contact*/
+.contact{
+    float:left;
+    position:relative;
+    font-weight:300;
+    min-height:100%;
+    min-height:100vh;
+}
 
 .contact-left{
     flex-basis: 35%;
