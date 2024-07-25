@@ -295,7 +295,7 @@ a.blank-link:hover{
     position:relative;
     font-weight:300;
     width: 100%;
-    min-height:500vh;
+    min-height:125vh;
 }
 
 .sub-title-services{
@@ -481,12 +481,16 @@ form .btn2{
     cursor: pointer;
 }
 .copyright{
+    position: absolute;
     width: 100%;
     text-align: center;
     padding: 25px;
     background: #ffcb9a;
     font-weight: 300;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 75px;
+    bottom: 0px;
+    left: 0px;
 }
 .copyright i{
     color: #880808;
