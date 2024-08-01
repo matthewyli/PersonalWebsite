@@ -40,6 +40,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 2;
 }
 
 .logo{
@@ -94,9 +95,9 @@ nav ul li a:hover::after{
 }
 .self{
     position: relative;
-    left: 1100px;
-    bottom: 375px;
-    width:800px;
+    left: 60%;
+    bottom: 25%;
+    width: 30%;
     opacity: 0.8;
     border-radius: 50%;
     border-color: #116466;
@@ -302,6 +303,8 @@ a.blank-link:hover{
     font-weight:300;
     width: 100%;
     min-height:125vh;
+    flex-grow: 1;
+    overflow: auto;
 }
 
 .sub-title-services{
@@ -430,6 +433,8 @@ a.blank-link:hover{
     position:relative;
     font-weight:300;
     width: 100%;
+    margin-top: 100px;
+    clear: both;
 }
 .contact-left{
     flex-basis: 30%;
@@ -480,6 +485,9 @@ form input, form textarea{
     font-size: 18px;
     border-radius: 6px;
 }
+form textarea{
+    height: 6em;
+}
 form .btn2{
     padding: 14px 60px;
     font-size: 18px;
@@ -511,6 +519,11 @@ nav .fas{
 @media only screen and (max-width: 1500px){
     #header{
         background-image: url(images/phone-background.png);
+    }
+    .self{
+        width: 0px;
+        border-radius: 0;
+        border-style: none;
     }
     .header-text{
         margin-top: 100%;
@@ -562,6 +575,20 @@ nav .fas{
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+    form input, form textarea{
+        width: 100%;
+        border: 0;
+        outline: none;
+        background: #ffcb9a;
+        padding: 5px;
+        margin: 5px 0;
+        color: #116466;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    form textarea{
+        height: 6em;
     }
     .copyright{
         font-size: 14px;
