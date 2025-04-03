@@ -8,8 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #d1e8e2;
-    color: #116466;
+    color: #000000;
 }
 #header{
     width: 100%;
@@ -55,7 +54,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #116466;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -65,7 +64,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #FFCB9A;
+    background: #808080;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -84,8 +83,8 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #d1e8e2;
-    text-shadow: -1px -1px 0 #116466, 1px -1px 0 #116466, -1px 1px 0 #116466, 1px 1px 0 #116466;
+    color: #ffffff;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
 }
 
 .row{
@@ -100,14 +99,14 @@ nav ul li a:hover::after{
     width: 30%;
     opacity: 0.8;
     border-radius: 50%;
-    border-color: #116466;
+    border-color: #000000;
     border-style:dashed;
 }
 
 /* about me */
 /*#about{
     padding: 80px 0;
-    color: #116466;
+    color: #000000;
 }
 .about-col-1{
     flex-basis: 35%;
@@ -123,7 +122,7 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600;
-    color: #116466;
+    color: #000000;
 }
 .tab-titles{
     display: flex;
@@ -140,7 +139,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #116466;
+    background: #000000;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -172,7 +171,7 @@ nav ul li a:hover::after{
  */ 
 
  .highlight{
-    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #FFCB9A 50%);
+    background: linear-gradient(180deg,rgba(255,255,255,0) 50%, #808080 50%);
 }
 a.blank-link, a.blank-link:visited{
     text-decoration: none;
@@ -180,7 +179,7 @@ a.blank-link, a.blank-link:visited{
 }
 a.blank-link:hover{
     text-decoration: underline;
-    text-decoration-color: #FFCB9A
+    text-decoration-color: #808080
 }
 .subsub-text{
     font-size: 10px;
@@ -257,14 +256,14 @@ a.blank-link:hover{
         content:"";
         width:100%;
         height:6px;
-        background: #116466;
+        background: #000000;
         display:block;
         margin-top:3px;
       }
       &::before{
         content:"";
         height:6px;
-        background: #ffcb9a;
+        background: #808080;
         position:absolute;
         margin-top:3px;
         bottom:0;
@@ -318,7 +317,6 @@ a.blank-link:hover{
 
 }
 .services-list div{
-    background: #ffcb9a;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
@@ -345,7 +343,7 @@ a.blank-link:hover{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #d9b08c;
+    background: #D3D3D3;
     transform: translateY(-10px);
 
 }
@@ -373,7 +371,7 @@ a.blank-link:hover{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(255,203, 153, 0.6), #d1e8e2);
+    background: linear-gradient(rgba(255,203, 153, 0.6), #ffffff);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -394,7 +392,7 @@ a.blank-link:hover{
 }
 .layer a{
     margin-top: 20px;
-    color: #116466;
+    color: #000000;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -416,15 +414,15 @@ a.blank-link:hover{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ffcb9a;
+    border: 1px solid #808080;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #116466;
+    color: #000000;
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ffcb9a;
+    background: #808080;
 }
 
 /*contact*/
@@ -448,7 +446,7 @@ a.blank-link:hover{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ffcb9a;
+    color: #808080;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -459,17 +457,17 @@ a.blank-link:hover{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #116466;
+    color: #000000;
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ffcb9a;
+    color: #808080;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ffcb9a;
+    background: #808080;
 }
 .contact-right form{
     width: 100%;
@@ -478,10 +476,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #ffcb9a;
+    background: #808080;
     padding: 15px;
     margin: 15px 0;
-    color: #116466;
+    color: #000000;
     font-size: 18px;
     border-radius: 6px;
 }
@@ -499,7 +497,7 @@ form .btn2{
     width: 100%;
     text-align: center;
     padding: 25px;
-    background: #ffcb9a;
+    background: #808080;
     font-weight: 300;
     margin-bottom: 0px;
     height: 75px;
@@ -537,7 +535,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #ffcb9a;
+        background: #808080;
         position: fixed;
         top: 0;
         right: -200px;
@@ -580,10 +578,10 @@ nav .fas{
         width: 100%;
         border: 0;
         outline: none;
-        background: #ffcb9a;
+        background: #808080;
         padding: 5px;
         margin: 5px 0;
-        color: #116466;
+        color: #000000;
         font-size: 14px;
         border-radius: 6px;
     }
@@ -661,22 +659,22 @@ nav .fas{
             content:"";
             width:100%;
             height:15px;
-            background: #116466;
+            background: #000000;
             display:block;
             margin-top:3px;
           }
           &::before{
             content:"";
             height:15px;
-            background: #ffcb9a;
+            background: #808080;
             position:absolute;
             margin-top:3px;
             bottom:0;
           }
           &:nth-child(1)::before {width:85%;animation: skill_1 0.6s ease;}
           &:nth-child(2)::before {width:60%; animation: skill_2 0.6s ease;} 
-          &:nth-child(3)::before {width:40%;animation: skill_3 0.6s ease;}
-          &:nth-child(4)::before {width:50%;animation: skill_4 0.6s ease;}
+          &:nth-child(3)::before {width:75%;animation: skill_3 0.6s ease;}
+          &:nth-child(4)::before {width:65%;animation: skill_4 0.6s ease;}
           &:nth-child(5)::before {width:80%;animation: skill_5 0.6s ease;}
           &:nth-child(6)::before {width:70%;animation: skill_6 0.6s ease;}
           &:nth-child(7)::before {width:60%;animation: skill_6 0.6s ease;}
@@ -688,8 +686,8 @@ nav .fas{
         }
         @keyframes skill_1 {from {width:0%;}to {width:85%;}}
         @keyframes skill_2 {from {width:0%;}to {width:60%;}}
-        @keyframes skill_3 {from {width:0%;}to {width:40%;}}
-        @keyframes skill_4 {from {width:0%;}to {width:50%;}}
+        @keyframes skill_3 {from {width:0%;}to {width:75%;}}
+        @keyframes skill_4 {from {width:0%;}to {width:65%;}}
         @keyframes skill_5 {from {width:0%;}to {width:80%;}}  
         @keyframes skill_6 {from {width:0%;}to {width:70%;}}
         @keyframes skill_7 {from {width:0%;}to {width:60%;}}
