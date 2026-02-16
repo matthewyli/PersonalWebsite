@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matthew Li 's Personal Portfolio</title>
+    <title>Matthew Li's Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/12f6b0472a.js" crossorigin="anonymous"></script>
 </head>
@@ -21,14 +24,13 @@
                         <li><a href ="#about">Resume</a></li>
                         <li><a href ="#projects">Projects</a></li>
                         <li><a href ="#contact">Contact</a></li>
-                        <li><a href ="#">Blog</a></li>
                         <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
                     <i class="fas fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
                     <h1>Hi, I'm <span>Matthew Li</span><br></h1>
-                    <p>This is my virtual, *expanded* resume</p>
+                    <p>This is my virtual, <em>expanded</em> resume.</p>
                 </div>
             </div>
         </div>
@@ -81,14 +83,14 @@
         <div class="container">
             <div class="experience section-padding">
                 <div class="slides">
-                    <h1 class="sub-title">Resume</h1>
-                    <p class="subsub-text space">Note: * indicates ON resume<br>Additional Note: Some parts of this resume contain external links for more information</p>
+                    <section class="page-section is-active" id="resume-page">
+                        <h1 class="sub-title">Resume</h1>
 
-                    <div class="experience-wrapper">
+                        <div class="experience-wrapper">
 
                         <h3 class="experience-title"><span class="highlight">Education</span></h3>
                         
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://www.uchicago.edu/en">University of Chicago</a></div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">September 2023 - June 2027</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -98,22 +100,31 @@
                                 <div class="experience-title">Double Major in <a class = 'blank-link' href ="https://cs.uchicago.edu/">Computer Science</a> and <a class = 'blank-link' href ="http://collegecatalog.uchicago.edu/thecollege/caam/">Computational and Applied Mathematics</a></div> <!-- JOB TITLE  -->
                                 <div class="company-description">
                                     <p>GPA: 3.8 (Major: 4.0)</p>  <!-- JOB DESCRIPTION  -->
-                                    <p>notable courses (in relative order of difficulty/major):
-                                        CMSC 14200 (Introduction to Computer Science II),
-                                        CMSC 14300 (Systems Programming I),
-                                        CSMC 14400 (Systems Programming II),
-                                        CMSC 23710 (Scientific Visualization),
-                                        CMSC 22200 (Computer Architecture),
-                                        CMSC 25300 (Mathematical Foundations of Machine Learning)</p>
-                                    <p> MATH 19620 (Linear Algebra),
-                                        MATH 15910 (Introduction to Proofs in Analysis),
-                                        STAT 24300 (Numerical Linear Algebra),
-                                        MATH 20300 (Analysis in Rn I)</p>
+                                    <p>major courses:<br>
+                                        CMSC 14200 (Introduction to Computer Science II)<br>
+                                        CMSC 14300 (Systems Programming I)<br>
+                                        CSMC 14400 (Systems Programming II)<br>
+                                        CMSC 23710 (Scientific Visualization)<br>
+                                        CMSC 22200 (Computer Architecture)<br>
+                                        CMSC 23500 (Introduction to Database Systems)<br>
+                                        CMSC 25300 (Mathematical Foundations of Machine Learning)<br>
+                                        CMSC 25400 (Machine Learning)<br>
+                                        CMSC 27100 (Discrete Mathematics)<br>
+                                        CMSC 27200 (Theory of Algorithms)
+                                    </p>
+                                    <p>MATH 19620 (Linear Algebra)<br>
+                                        MATH 15910 (Introduction to Proofs in Analysis)<br>
+                                        STAT 24300 (Numerical Linear Algebra)<br>
+                                        STAT 24400 (Statistical Theory and Methods I)<br>
+                                        STAT 24500 (Statistical Theory and Methods II)<br>
+                                        MATH 20300 (Analysis in Rn I)<br>
+                                        MATH 20400 (Analysis in Rn II)
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://tjhsst.fcps.edu/">Thomas Jefferson High School for Science and Technology</a></div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">September 2019 - June 2023</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -132,7 +143,49 @@
                     </div>
                     <div class="experience-wrapper">
                         <h3 class="experience-title"><span class="highlight">Experience</span></h3>
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
+                            <div class="company-wrapper clearfix">
+                                <div class="company-title"><a class = 'blank-link' href ="https://www.drw.com/">DRW</a></div>
+                                <div class="time">June 2026</div>
+                            </div>
+                            
+                            <div class="job-wrapper clearfix">
+                                <div class="experience-title">Incoming Quantitative Trading Analyst Intern</div>
+                                <div class="company-description">
+                                    <p>- Summer 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whole-position collapsible">
+                            <div class="company-wrapper clearfix">
+                                <div class="company-title">Catalyst Labs</div>
+                                <div class="time">October 2025 - February 2026</div>
+                            </div>
+                            
+                            <div class="job-wrapper clearfix">
+                                <div class="experience-title">Backend Developer</div>
+                                <div class="company-description">
+                                    <p>- Integrated pipeline tools to generate signals in crypto markets</p>
+                                    <p>- Created infrastructure for automated natural language prediction markets trading</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whole-position collapsible">
+                            <div class="company-wrapper clearfix">
+                                <div class="company-title"><a class = 'blank-link' href ="https://beachpoint.capital/">Beach Point Capital Management</a></div>
+                                <div class="time">June 2025 - August 2025</div>
+                            </div>
+                            
+                            <div class="job-wrapper clearfix">
+                                <div class="experience-title">Quantitative Research Intern</div>
+                                <div class="company-description">
+                                    <p>- Created a custom financial statement compiler for private company valuation</p>
+                                    <p>- Made semi systematic strategy to trade low capitalization companies on NASDAQ</p>
+                                    <p>- Developed signal generation in junk bond market</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://www.finalyze.io/">Finalyze Capital</a></div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">June 2024 - August 2024</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -148,7 +201,7 @@
                                 </div>
                             </div>
                         </div>  
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://corporate.abercrombie.com/careers/students/">Abercrombie & Fitch Co.</a></div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">July 2024 - August 2024</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -162,7 +215,7 @@
                                 </div>
                             </div>
                         </div>  
-                        <div class="whole-position">   
+                        <div class="whole-position collapsible">   
                             <div class="company-wrapper clearfix">
                                 <div class="company-title">Independent</div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">June 2022 - May 2023</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -181,7 +234,7 @@
 
 
                         <!---
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://www.wendys.com/">Wendy's</a></div>
                                 <div class="time">June 2022 - Aug 2022</div>
@@ -194,7 +247,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title">Independent</div>
                                 <div class="time">June 2022 - Sep 2023</div> 
@@ -207,7 +260,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title">Independent</div> 
                                 <div class="time">June 2020 - Sep 2023</div>
@@ -221,7 +274,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://www.fairfaxcounty.gov/library/branches/kings-park">King's Park Library</a></div>
                                 <div class="time">June 2017 - Sep 2022</div> 
@@ -240,7 +293,7 @@
                     <div class="experience-wrapper">
                         <h3 class="experience-title"><span class="highlight">Clubs & Activities</span></h3>
                         
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://www.tbc.uchicago.edu/">The Blue Chips Investment Club</a></div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">September 2023 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -256,7 +309,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="whole-position">    
+                        <div class="whole-position collapsible">    
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://careeradvancement.uchicago.edu/careers-in/business/">Financial Markets Program</a></div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">June 2024 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -270,7 +323,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://mc.uchicago.edu/about.html">Maroon Capital</a></div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">September 2023 - June 2024</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -284,7 +337,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://www.paretosolutions.info/">Pareto Solutions</a></div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">September 2023 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -299,7 +352,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                         <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://paragoninvestments.org/">Paragon Global Investments</a></div> <!-- NAME OF THE COMPANY YOUWORK WITH  -->
                                 <div class="time">September 2023 - Present</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
@@ -314,7 +367,7 @@
                             </div>
                         </div>
 <!---
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title"><a class = 'blank-link' href ="https://www.vexrobotics.com/">VEX Robotics</a></div>
                                 <div class="time">August 2015 - May 2023</div>
@@ -330,7 +383,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="whole-position">
+                        <div class="whole-position collapsible">
                             <div class="company-wrapper clearfix">
                                 <div class="company-title">Tennis (<a class = 'blank-link' href ="https://tennislink.usta.com/Dashboard/Main/">USTA</a> / <a class = 'blank-link' href ="https://www.utrsports.net/">UTR</a> / High School)</div>
                                 <div class="time">2012 - Present</div> 
@@ -347,45 +400,73 @@
                         <div class="job-wrapper clearfix"></div>
 -->
                     </div>
+                    </section>
+                    <section class="page-section" id="interests-page">
+                        <h1 class="sub-title">Interests</h1>
                     <!--Skill experience-->
-                    <div class="section-wrapper clearfix">
-                        <h3 class="section-title"><span class="highlight">Skills (My honest estimate)</span></h3>  <!-- YOUR SET OF SKILLS  -->
-                        <ul>
-                            <li class="skill-percentage">Python</li>
-                            <li class="skill-percentage">Java</li>
-                            <li class="skill-percentage">C</li>
-                            <li class="skill-percentage">C++</li>
-                            <li class="skill-percentage">R</li>
-                            <li class="skill-percentage">MySQL</li>
-                            <li class="skill-percentage">Machine Learning / Artificial Intelligence</li>
-                            <li class="skill-percentage">Excel</li>
-                            <li class="skill-percentage">Powerpoint</li>
-                            <li class="skill-percentage">HTML / HTML5</li>
-                            <li class="skill-percentage">CSS / CSS3 / SASS / LESS</li>
-                            <li class="skill-percentage">Java Script</li>
-                        </ul>
+                    <div class="section-grid">
+                        <div class="section-wrapper">
+                            <h3 class="section-title"><span class="highlight">Skills</span></h3>  <!-- YOUR SET OF SKILLS  -->
+                            <ul class="skills-list">
+                                <li class="skill-item" style="--level: 85%;">Python</li>
+                                <li class="skill-item" style="--level: 60%;">Java</li>
+                                <li class="skill-item" style="--level: 40%;">C</li>
+                                <li class="skill-item" style="--level: 50%;">C++</li>
+                                <li class="skill-item" style="--level: 80%;">Rust</li>
+                                <li class="skill-item" style="--level: 80%;">R</li>
+                                <li class="skill-item" style="--level: 70%;">SQL</li>
+                                <li class="skill-item" style="--level: 60%;">ML/AI</li>
+                                <li class="skill-item" style="--level: 50%;">Excel</li>
+                                <li class="skill-item" style="--level: 75%;">Powerpoint</li>
+                                <li class="skill-item" style="--level: 60%;">HTML</li>
+                                <li class="skill-item" style="--level: 60%;">CSS</li>
+                                <li class="skill-item" style="--level: 50%;">Java Script</li>
+                            </ul>
+                        </div>
+                            
+                        <div class="section-wrapper">
+                            <h3 class="section-title"><span class="highlight">Hobbies and Interests</span></h3>  <!-- DESCRIPTION OF YOUR HOBBIES -->
+                            <ul class="hobbies-list">
+                                <li class="hobby-item collapsible">
+                                    <span class="hobby-title">Poker</span>
+                                    <span class="hobby-detail">favorite player: Phil Ivey</span>
+                                </li>
+                                <li class="hobby-item collapsible">
+                                    <span class="hobby-title">Exploring the World</span>
+                                    <span class="hobby-detail">favorite places: Lake Como, Italy; Valencia, Spain; Lisbon, Portugal; London, England</span>
+                                </li>
+                                <li class="hobby-item collapsible">
+                                    <span class="hobby-title">Coffee</span>
+                                    <span class="hobby-detail">favorite drink: <em>iced</em> latte</span>
+                                </li>
+                                <li class="hobby-item collapsible">
+                                    <span class="hobby-title">Music</span>
+                                    <span class="hobby-detail">favorite genre: Country (Sand In My Boots, Morgan Wallen)</span>
+                                </li>
+                                <li class="hobby-item collapsible">
+                                    <span class="hobby-title">Basketball, Football</span>
+                                    <span class="hobby-detail">favorite team: Golden State Warriors, San Francisco 49ers</span>
+                                </li>
+                                <li class="hobby-item collapsible">
+                                    <span class="hobby-title">Chess</span>
+                                    <span class="hobby-detail">chess.com peak rapid rating: 1800 (openings: London System + Sicilian)</span>
+                                </li>
+                                <li class="hobby-item collapsible">
+                                    <span class="hobby-title">Personal Investing</span>
+                                    <span class="hobby-detail">current stock picks: Abercrombie & Fitch (NYSE: ANF), J.P. Morgan Exchange-Traded Fund Trust (NYSE: JEPQ)</span>
+                                </li>
+                                <li class="hobby-item collapsible">
+                                    <span class="hobby-title">Artificial Intelligence (AGI) / Machine Learning</span>
+                                    <span class="hobby-detail">algorithms coded: Regression, RNN, CNN, LSTM, K-means, X-means, SVM, Random Forest</span>
+                                </li>
+                                <li class="hobby-item collapsible">
+                                    <span class="hobby-title">Running</span>
+                                    <span class="hobby-detail">goal: Marathon at 8:00 pace</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                        
-                    <div class="section-wrapper clearfix">
-                        <h3 class="section-title"><span class="highlight">Hobbies and Interests</span></h3>  <!-- DESCRIPTION OF YOUR HOBBIES -->
-                        <p>Poker - favorite player: Phil Ivey</p>
-                        <br>
-                        <p>Exploring the World - favorite places: Lake Como, Italy; Valencia, Spain; Lisbon, Portugal; London, England</p>
-                        <br>
-                        <p>Coffee - favorite drink: *iced* latte</p>
-                        <br>
-                        <p>Music - favorite genre: Country (Sand In My Boots, Morgan Wallen)</p>
-                        <br>
-                        <p>Basketball, Football - favorite team: Golden State Warriors, San Francisco 49ers</p>
-                        <br>
-                        <p>Chess - chess.com peak rapid rating: 1800 (openings: London System + Sicilian)</p>
-                        <br>
-                        <p>Personal Investing - current stock picks: Abercrombie & Fitch (NYSE: ANF), J.P. Morgan Exchange-Traded Fund Trust (NYSE: JEPQ)</p>
-                        <br>
-                        <p>Artificial Intelligence (AGI) / Machine Learning - Algorithms coded: Regression, RNN, CNN, LSTM, K-means, X-means, SVM, Random Forest</p>
-                        <br>
-                        <p>Running - Goal: Marathon at 8:00 pace</p>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -393,70 +474,88 @@
     <!------------projects----------->
     <div id="projects">
         <div class="container">
-            <div class="services slides">
-                <h1 class="sub-title-services">Projects</h1>
-                <p class="subsub-text">Mostly work across computer science and finance</p>
-                <div class="services-list">
-                    <div>
-                        <h2>Carry Trade Using Bond Interest Rate Signals</h2>
-                        <p>- 1.245 Sharpe, 83.3% Win Rate, 15,132 trades executed in a 10-year time period, 175.762% PnL (10.68% YoY) matching S&P 500 returns from 2010-2019, little to no correlation with S&P 500 and USD is not used as a long or short currency</p>
-                        <p>- Created a carry trade algorithm across 4 ForEx currencies (Swiss Franc, Japanese Yen, Australian Dollar, Canadian Dollar) using 16 separate bond interest rates from federal reserve data (1962 - 2024) and 10 year out-of-sample backtesting verification</p>
-                        <p>- Programmed 5 separate algorithms to optimize performance: Linear Regression, Histogram-Based Gradient Boosting Regression, Convoluted Neural Network (4 hidden layers), Long Short-Term Memory Network, Weighted Decision Tree + Random Forest</p>
-                        <p>- Utilized various data manipulation techniques like sliding windows, lookback periods, absolute and relative data margin, and imputers/filters for NaN data points as well as continuous training even during out-of-sample testing</p>
-                        <a class ="blank-link bot" href="https://github.com/matthewyli/Carry-Trade">View Source Code     |</a>
-                        <a class ="blank-link bot" href="images\Shanghai Sharks Final Presentation.pptx" download>|      Download Presentation</a>
-                    </div>
-                    <div>
-                        <h2>Categorization of Tennis Swing Using a Recurrent Neural Network in Human Activity Recognition</h2>
-                        <p>- Utilized an LSTM to classify the following tennis strokes: forehand, backhand, backhand slice</p>
-                        <p>- Novel approach implementing sliding windows in HAR, detailing model performance in attached research paper (unpublished)</p>
-                        <p>- Proved effectiveness of LSTM, outperforming RNN, CNN, GRU; Achieved 99%+ prediction accuracy when categorizing</p>
-                        <p>- Long Short-Term Memory (LSTM), Recurrent Neural Network (RNN), Convoluted Neural Network (CNN), Gated Recurrent Unit (GRU)</p>
-                        <a class ="blank-link bot" href="https://github.com/matthewyli/HAR-LSTM-Tennis">View Source Code     |</a>
-                        <a class ="blank-link bot" href="images/AISTATS2023_Submission.pdf" download>|      Download Research Paper</a>
-                        <p class="subsub-text bot">Not in publication</p>
-                    </div>
-                    <div>
-                        <h2>Pairs Trading Optimized Using Genetic Algorithm</h2>
-                        <p>- Implemented a pairs trading algorithm using PNC (long) and BAC (short), backtesting the strategy from 2013-2023, including and excluding 2020</p>
-                        <p>- Cross-correlated a set of banks as assets to determine a possibly profitable pair with a maximum bound correlation coefficient</p>
-                        <p>- Chosen banks for testing included: Bank of America (NYSE: BAC), JP Morgan Chase (NYSE: JPM), US Bancorp (NYSE:USB), Citigroup (NYSE: C), Wells Fargo (NYSE: WFC), PNC (NYSE: PNC), Charles Schwab (NYSE:SCHW), Morgan Stanley (NYSE: MS), Goldman Sachs (NYSE: GS), Truist (NYSE: TFC), ICICI Bank (NYSE: IBN)</p>
-                        <p>- Tested various executions and optimized trading timing using a Genetic Algorithm (PyGAD), an algorithm typically used to identify certain genes responsible for behaviors or attributes</p>
-                        <p>- Achieved Sharpe Ratio of over 3, indicating highly successful returns in the 2013-2023 testing window; however, this Sharpe Ratio doesn't include transaction costs, projecting higher-than-actual returns</p>
-                        <a class ="blank-link bot" href="https://github.com/matthewyli/Pairs-Trading-Maroon-Capital">View Source Code     |</a>
-                        <a class ="blank-link bot" href="images/Pairs_trading.pdf" download>|      Download Research Paper</a>
-                    </div>
-                    <div>
-                        <h2>H&M Supply Chain Optimization Machine Learning Backtesting Algorithm</h2>
-                        <p>Note: This project was completed during the final round during the interview process for the <a class = 'blank-link' href ="https://trainee.hmgroup.com/#Our-trainee">BI, Data & Analytics Track under the H&M Group Trainee Program</a></p>
-                        <p>- Implemented a backtesting algorithm for two machine learning models aiming to optimize the clothing brand's resources to maximize profit and reduce waste</p>
-                        <p>- Given a large dataset containing the real sales info, and then comparing it to the model's predictive outputs, the algorithm created a new metric to identify which algorithm continued to predict an efficient, profit-mazimizing strategy comparatively</p>
-                        <p>- Numerous metrics were tested and visualized before concluding which machine learning model was more accurate and could provide higher sales for the clothing brand while minimizing waste</p>
-                        <a class ="blank-link bot" href="https://github.com/matthewyli/HM-Case">View Source Code</a>
-                    </div>
-                    <div>
-                        <h2>Artificial Intelligence and Machine Learning in Financial Risk Modeling Presentation</h2>
-                        <p>- Created a high-level presentation covering the basics of Machine Learning from linear vs non-linear models to supervised versus unsupervised models</p>
-                        <p>- Presentation time was around 30 minutes and the goal beyond the basic algorithm was to describe how these models could help provide a stronger method for identifying risk in markets, later shown in the case studies</p>
-                        <p>- Models and methods presented included: Principal Components Analysis, Ridge regression, Partial Least Squares, LASSO, LARS, Elastic Nets, Neural Networks, Deep Learning, Support Vector Machines, Decision Trees, K-,X-means</p>
-                        <a class ="blank-link bot" href="images/MLPres.pdf" download>Download Presentation</a>
-                    </div>
-                    <div>
-                        <h2>IBM Stock Pitch</h2>
-                        <p>Note: if access to model is requested, please contact me via the email address or phone number provided in the Contact section</p>
-                        <p>- Analyzed and modeled the company International Business Machines (NYSE: IBM); rated a BUY in December 2023 (+17% return)</p>
-                        <p>- Learned about the company's business model, products, segments, leadership, and trends; Compared products to market size and competitors to understand if IBM had a reasonable competitive advantage</p>
-                        <p>- Performed a full financial analysis using the company's 10-K via BamSEC, proposing a roughly 5% upside in its base case</p>
-                        <a class ="blank-link bot" href="images/IBM Presentation Pitch.pdf" download>Download Presentation</a>
-                    </div>
-                    <div>
-                        <h2>Abercrobmie & Fitch (NYSE: ANF) Product Improvement Project</h2>
-                        <p>- Created a survey to gather information from over 100 participants; performed data analysis on the data combined with market information</p>
-                        <p>- Suggested three separate implementations to help increase sales for the Hollister subsidiary of Abercrombie & Fitch</p>
-                        <a class ="blank-link bot" href="images\A&F freshman forum 2024 - group #3.pptx" download>Download Presentation</a>
+            <section class="page-section" id="projects-page">
+                <div class="services slides">
+                    <h1 class="sub-title-services">Projects</h1>
+                    <div class="services-list">
+                        <div class="project-card collapsible">
+                            <h2>Carry Trade Using Bond Interest Rate Signals</h2>
+                            <p>- 1.245 Sharpe, 83.3% Win Rate, 15,132 trades executed in a 10-year time period, 175.762% PnL (10.68% YoY) matching S&P 500 returns from 2010-2019, little to no correlation with S&P 500 and USD is not used as a long or short currency</p>
+                            <p>- Created a carry trade algorithm across 4 ForEx currencies (Swiss Franc, Japanese Yen, Australian Dollar, Canadian Dollar) using 16 separate bond interest rates from federal reserve data (1962 - 2024) and 10 year out-of-sample backtesting verification</p>
+                            <p>- Programmed 5 separate algorithms to optimize performance: Linear Regression, Histogram-Based Gradient Boosting Regression, Convoluted Neural Network (4 hidden layers), Long Short-Term Memory Network, Weighted Decision Tree + Random Forest</p>
+                            <p>- Utilized various data manipulation techniques like sliding windows, lookback periods, absolute and relative data margin, and imputers/filters for NaN data points as well as continuous training even during out-of-sample testing</p>
+                            <div class="project-links">
+                                <a class="blank-link" href="https://github.com/matthewyli/Carry-Trade">Source Code</a>
+                                <span class="link-separator">|</span>
+                                <a class="blank-link" href="images/Shanghai Sharks Final Presentation.pptx" download>Download Presentation</a>
+                            </div>
+                        </div>
+                        <div class="project-card collapsible">
+                            <h2>Categorization of Tennis Swing Using a Recurrent Neural Network in Human Activity Recognition</h2>
+                            <p>- Utilized an LSTM to classify the following tennis strokes: forehand, backhand, backhand slice</p>
+                            <p>- Novel approach implementing sliding windows in HAR, detailing model performance in attached research paper (unpublished)</p>
+                            <p>- Proved effectiveness of LSTM, outperforming RNN, CNN, GRU; Achieved 99%+ prediction accuracy when categorizing</p>
+                            <p>- Long Short-Term Memory (LSTM), Recurrent Neural Network (RNN), Convoluted Neural Network (CNN), Gated Recurrent Unit (GRU)</p>
+                            <div class="project-links">
+                                <a class="blank-link" href="https://github.com/matthewyli/HAR-LSTM-Tennis">Source Code</a>
+                                <span class="link-separator">|</span>
+                                <a class="blank-link" href="images/AISTATS2023_Submission.pdf" download>Download Research Paper</a>
+                            </div>
+                            <p class="subsub-text bot">Not in publication</p>
+                        </div>
+                        <div class="project-card collapsible">
+                            <h2>Pairs Trading Optimized Using Genetic Algorithm</h2>
+                            <p>- Implemented a pairs trading algorithm using PNC (long) and BAC (short), backtesting the strategy from 2013-2023, including and excluding 2020</p>
+                            <p>- Cross-correlated a set of banks as assets to determine a possibly profitable pair with a maximum bound correlation coefficient</p>
+                            <p>- Chosen banks for testing included: Bank of America (NYSE: BAC), JP Morgan Chase (NYSE: JPM), US Bancorp (NYSE:USB), Citigroup (NYSE: C), Wells Fargo (NYSE: WFC), PNC (NYSE: PNC), Charles Schwab (NYSE:SCHW), Morgan Stanley (NYSE: MS), Goldman Sachs (NYSE: GS), Truist (NYSE: TFC), ICICI Bank (NYSE: IBN)</p>
+                            <p>- Tested various executions and optimized trading timing using a Genetic Algorithm (PyGAD), an algorithm typically used to identify certain genes responsible for behaviors or attributes</p>
+                            <p>- Achieved Sharpe Ratio of over 3, indicating highly successful returns in the 2013-2023 testing window; however, this Sharpe Ratio doesn't include transaction costs, projecting higher-than-actual returns</p>
+                            <div class="project-links">
+                                <a class="blank-link" href="https://github.com/matthewyli/Pairs-Trading-Maroon-Capital">Source Code</a>
+                                <span class="link-separator">|</span>
+                                <a class="blank-link" href="images/Pairs_trading.pdf" download>Download Research Paper</a>
+                            </div>
+                        </div>
+                        <div class="project-card collapsible">
+                            <h2>H&M Supply Chain Optimization Machine Learning Backtesting Algorithm</h2>
+                            <p>Note: This project was completed during the final round during the interview process for the <a class = 'blank-link' href ="https://trainee.hmgroup.com/#Our-trainee">BI, Data & Analytics Track under the H&M Group Trainee Program</a></p>
+                            <p>- Implemented a backtesting algorithm for two machine learning models aiming to optimize the clothing brand's resources to maximize profit and reduce waste</p>
+                            <p>- Given a large dataset containing the real sales info, and then comparing it to the model's predictive outputs, the algorithm created a new metric to identify which algorithm continued to predict an efficient, profit-mazimizing strategy comparatively</p>
+                            <p>- Numerous metrics were tested and visualized before concluding which machine learning model was more accurate and could provide higher sales for the clothing brand while minimizing waste</p>
+                            <div class="project-links">
+                                <a class="blank-link" href="https://github.com/matthewyli/HM-Case">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-card collapsible">
+                            <h2>Artificial Intelligence and Machine Learning in Financial Risk Modeling Presentation</h2>
+                            <p>- Created a high-level presentation covering the basics of Machine Learning from linear vs non-linear models to supervised versus unsupervised models</p>
+                            <p>- Presentation time was around 30 minutes and the goal beyond the basic algorithm was to describe how these models could help provide a stronger method for identifying risk in markets, later shown in the case studies</p>
+                            <p>- Models and methods presented included: Principal Components Analysis, Ridge regression, Partial Least Squares, LASSO, LARS, Elastic Nets, Neural Networks, Deep Learning, Support Vector Machines, Decision Trees, K-,X-means</p>
+                            <div class="project-links">
+                                <a class="blank-link" href="images/MLPres.pdf" download>Download Presentation</a>
+                            </div>
+                        </div>
+                        <div class="project-card collapsible">
+                            <h2>IBM Stock Pitch</h2>
+                            <p>Note: if access to model is requested, please contact me via the email address or phone number provided in the Contact section</p>
+                            <p>- Analyzed and modeled the company International Business Machines (NYSE: IBM); rated a BUY in December 2023 (+17% return)</p>
+                            <p>- Learned about the company's business model, products, segments, leadership, and trends; Compared products to market size and competitors to understand if IBM had a reasonable competitive advantage</p>
+                            <p>- Performed a full financial analysis using the company's 10-K via BamSEC, proposing a roughly 5% upside in its base case</p>
+                            <div class="project-links">
+                                <a class="blank-link" href="images/IBM Presentation Pitch.pdf" download>Download Presentation</a>
+                            </div>
+                        </div>
+                        <div class="project-card collapsible">
+                            <h2>Abercrobmie & Fitch (NYSE: ANF) Product Improvement Project</h2>
+                            <p>- Created a survey to gather information from over 100 participants; performed data analysis on the data combined with market information</p>
+                            <p>- Suggested three separate implementations to help increase sales for the Hollister subsidiary of Abercrombie & Fitch</p>
+                            <div class="project-links">
+                                <a class="blank-link" href="images/A&F freshman forum 2024 - group #3.pptx" download>Download Presentation</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
         
@@ -502,33 +601,37 @@
     <!-----contact-->
     <div id="contact">
         <div class="container">
-            <div class="row slides">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i></i>myl@uchicago.edu</p>
-                    <p><i class="fas fa-phone-square-alt"></i>703-980-2137</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/matthew-li-52b41222b/"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/ylimatt/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/matt.li.775823"><i class="fab fa-facebook"></i></a>
-                        <a href="https://github.com/matthewyli"><i class="fab fa-github"></i></a>
-                        <!--<a href="#"><i class="fab fa-twitter-square"></i></a>-->
+            <section class="page-section" id="contact-page">
+                <div class="contact-card">
+                    <div class="row slides">
+                        <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p><i class="fas fa-paper-plane"></i></i>myl@uchicago.edu</p>
+                            <p><i class="fas fa-phone-square-alt"></i>703-980-2137</p>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/matthew-li-52b41222b/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/ylimatt/"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/matt.li.775823"><i class="fab fa-facebook"></i></a>
+                                <a href="https://github.com/matthewyli"><i class="fab fa-github"></i></a>
+                                <!--<a href="#"><i class="fab fa-twitter-square"></i></a>-->
+                            </div>
+                            <!--<a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>-->
+                        </div>
+                        <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required></input>
+                                <input type="email" name="Email" placeholder="Your Email" required></input>
+                                <textarea name="Message" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                        <div class="copyright">
+                            <p>Copyright (c) Matthew Li</p>
+                        </div>
                     </div>
-                    <!--<a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>-->
                 </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required></input>
-                        <input type="email" name="Email" placeholder="Your Email" required></input>
-                        <textarea name="Message" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-                <div class="copyright">
-                    <p>Copyright © Matthew Li</p>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
 </div>
@@ -578,6 +681,61 @@
         })
         .catch(error => console.error('Error!', error.message))
     })
+  </script>
+
+<script>
+    document.documentElement.classList.add('js');
+
+    const collapsibles = document.querySelectorAll('.collapsible');
+    collapsibles.forEach((item) => {
+      item.setAttribute('tabindex', '0');
+      item.setAttribute('role', 'button');
+      item.setAttribute('aria-expanded', 'false');
+
+      const toggleItem = () => {
+        const isOpen = item.classList.toggle('is-open');
+        item.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      };
+
+      item.addEventListener('click', (event) => {
+        if (event.target.closest('a')) {
+          return;
+        }
+        toggleItem();
+      });
+
+      item.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          toggleItem();
+        }
+      });
+    });
+
+    const pageSections = document.querySelectorAll('.page-section');
+    if (pageSections.length) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          let mostVisible = null;
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
+              return;
+            }
+            if (!mostVisible || entry.intersectionRatio > mostVisible.intersectionRatio) {
+              mostVisible = entry;
+            }
+          });
+
+          if (mostVisible) {
+            pageSections.forEach((section) => section.classList.remove('is-active'));
+            mostVisible.target.classList.add('is-active');
+          }
+        },
+        { threshold: [0.25, 0.5, 0.75] }
+      );
+
+      pageSections.forEach((section) => observer.observe(section));
+    }
   </script>
 
 </body>
